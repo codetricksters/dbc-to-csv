@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dbc-reader"
+version = "0.1.0"
+description = ""
+authors = ["Leonardo Alves <leonardo.magic@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyreaddbc = "^1.2.0"
+ipython = "^8.25.0"
+typer = "^0.12.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+dbc-to-csv = "dbc_reader.app:app"
